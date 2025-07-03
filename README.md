@@ -53,17 +53,6 @@ The application tracks a wide variety of celestial bodies:
 
 Each celestial body is color-coded and sized according to its type and brightness in the sky map display.
 
-## Query Parameters
-
-| Parameter | Default Value | Description | Minimum Version Compatible |
-| --------- | ------------- | ----------- | -------------------------- |
-| latitude | 28.627222 | Latitude of observer | v1 |
-| longitude | -80.620833 | Longitude of observer | v1 |
-| elevation | 0 | Elevation of observer in meters above sea level | v1 |
-| time | null | Time of observation in [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, defaults to time of request | v2 |
-| showCoords | false | Display declination and right ascension of each body, expects true or false | v2 |
-| aboveHorizon | true | Set to false to display all celestial bodies even if they are below the horizon | v2 |
-
 ## Project Structure
 
 - `app.py` - Main application file
@@ -71,8 +60,6 @@ Each celestial body is color-coded and sized according to its type and brightnes
 - `planets_api.py` - Planetary body API module
 - `neo_api.py` - Near Earth Object API module
 - `solar_system_3d.py` - 3D Solar System visualization module
-
-## Technical Details
 
 ## Astronomy Calculations
 - **Skyfield library**: Used for high-precision astronomical calculations
